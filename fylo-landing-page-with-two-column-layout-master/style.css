@@ -1,0 +1,313 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ :root{
+    ---dark-blue: hsl(243, 87%, 12%);
+    ---Desaturated-blue: hsl(238, 22%, 44%);
+    ---Bright-blue: hsl(224, 93%, 58%); 
+    ---Cyan:  hsl(170, 45%, 43%); 
+    ---Light-Grayish-Blue: hsl(240, 75%, 98%);
+    ---Light-Gray: hsl(0, 0%, 75%);
+}
+ body{
+    font-family: 'Open Sans', sans-serif;
+ }
+ h1,
+ h2,
+ h3,
+ h4{
+    font-family: 'Raleway', sans-serif;
+ }
+ /* Start Header  */
+ .container{
+    margin: 0 5rem;
+ }
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li a{
+    margin: 0 30px;
+    text-transform: uppercase;
+    color: var(---dark-blue);
+    font-family: 'Raleway', sans-serif;
+}
+#navbar ul li a:hover{
+    color: var(---Bright-blue);
+    border-bottom: 2px solid var(---Desaturated-blue);
+}
+#home .row, #team .row,
+#sing-in .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    padding: 8rem 0;
+}
+#home .row img,
+#team .row img{
+    max-width: 100%;
+}
+#home .row .col h1{
+   font-size: 40px;
+   line-height: 1.4;
+}
+#home .row .col p{
+    margin: 30px 0;
+}
+#home .row .col input{
+    padding: 10px 15px;
+    width: 300px;
+    margin-right: 15px;
+}
+#home .row .col .btn{
+    padding: 10px 0;
+    background-color: var(---Bright-blue);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+}
+#home .row .col .btn:hover,
+#sing-in .row .col-2 .btn:hover{
+    background-color: rgb(255, 68, 68);
+}
+ /* End Header  */
+ /* Start Team  */
+ #team{
+    background: url("images/bg-curve-desktop.svg") no-repeat center center/cover;
+ }
+ #team .row h2{
+    font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+ }
+ #team .row .col > p{
+    color: var(---Desaturated-blue);
+    margin: 20px 0;
+    padding-right: 5rem;
+ }
+ #team .row .col a{
+    color: var(---Cyan);
+    border-bottom: 1px solid var(---Cyan);
+ }
+ #team .row .col a:hover{
+    color: var(---Bright-blue);
+    border-bottom: 1px solid var(---Bright-blue);
+ }
+ #team .row .col .box{
+    background-color: white;
+    margin-top: 3rem;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 350px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+#team .row .col .box p{
+    font-size: 12px;
+margin: 15px 0;
+line-height: 1.7;
+}
+#team .row .col .box .avatar{
+    display: flex;
+    align-items: center;
+}
+#team .row .col .box .avatar img{
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#team .row .col .box .avatar h3{
+    font-size: 12px;
+    font-weight: 700;
+}
+#team .row .col .box .avatar p{
+    font-size: 10px;
+    margin: 0;
+}
+ /* End Team  */
+/* Start Sing in  */
+#sing-in{
+ background-color: var(---Desaturated-blue);
+}
+#sing-in .row{
+    padding: 6rem 0;
+}
+#sing-in .row .col-1 h2{
+    font-size: 32px;
+    color: var(---Light-Grayish-Blue);
+    margin-bottom: 25px;
+}
+#sing-in .row .col-1 p{
+    color: var(---Light-Gray);
+    margin-right: 7rem;
+}
+#sing-in .row .col-2 input{
+    display: block;
+    padding: 20px;
+    width: 90%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+#sing-in .row .col-2 .btn{
+    padding: 15px 20px;
+    background-color: var(---Bright-blue);
+    border: none;
+    color: white;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+ /* End Sing in  */ 
+  /* Start Footer  */
+#footer{
+background-color: var(---dark-blue);
+color: var(---Light-Gray);
+padding: 5rem 0;
+}
+#footer .row{
+    display: grid;
+    grid-template-columns: 2fr repeat(3,1fr);
+}
+#footer .logo-w{
+    margin-bottom: 1rem;
+}
+#footer .row .col-1 .col-info{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+#footer .row .col-1 .col-info img{
+    margin-right: 10px;
+}
+#footer .row li{
+    margin-bottom: 15px;
+}
+#footer .row a{
+    color: var(---Light-Gray);
+}
+#footer .row .col-4 i{
+     border: 1px solid var(---Light-Gray);
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     height: 35px;
+     width: 35px;
+     text-align: center;
+     line-height: 2;
+     margin: 0 10px;
+}
+#footer .row .col-4  .fa-facebook-f:hover{
+    background-color: #213e97;
+}
+#footer .row .col-4  .fa-instagram:hover{
+    background-color: #c13584;
+}
+#footer .row .col-4  .fa-twitter:hover{
+    background-color: #00aeef;
+}
+ /* End Footer  */ 
+ /* Tablet  */
+ @media(max-width: 1000px) {
+  #home .row,
+  #team .row,
+  #sing-in .row{
+    grid-template-columns: 1fr;
+  }
+  #home .row,
+  #team .row
+  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #home .row h1,
+  #home .row p,
+  #team .row h2,
+  #sing-in .row{
+    text-align: center;
+  }
+#home .row input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#team{
+    background: url("images/bg-curve-mobile.svg") center center/ cover no-repeat;
+}
+#team h2{
+   margin-top: 2rem;
+   font-size: 28px; 
+}
+#team .link{
+    text-align: center;
+}
+#team .row .col .box{
+    margin: 2rem auto 0;
+    width: 300px;
+    padding: 20px;
+}
+#sing-in .row .col-1 p{
+    margin-right: 0;
+}
+#sing-in .row .col-2 input{
+    width: 100%;
+    margin: 30px 0 15px;
+}
+#footer .row{
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+#footer .row .col-4{
+    margin: auto;
+}
+ }
+ /* Mobile  */
+ @media(max-width: 650px){
+    .logo{
+        width: 80px;
+    }
+    .container{
+        margin: 0 8px;
+     }
+     #navbar ul li a{
+        margin: 0 8px;
+        font-size: 14px;
+     }
+  #home .row h1{
+    font-size: 27px;
+    margin-top: 2rem;
+  }   
+ }
